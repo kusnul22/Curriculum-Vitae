@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri | Kusnul Khotimah</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
+  <style>
+    body { font-family: Arial; margin:0; padding:0; background:#fffafa;}
+    body::before, body::after { content:""; position:absolute; width:200%; height:200px; background:#F5BABB; z-index:-1;}
+    body::before { top:-60px; left:-50px; transform:rotate(-5deg);}
+    body::after { bottom:-60px; right:-50px; transform:rotate(-5deg);}
+    .navbar {position:sticky; top:0; width:100%; background:#F5BABB; display:flex; justify-content:center; padding:12px 0; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:10;}
+    .navbar a { color:white; text-decoration:none; font-weight:bold; margin:0 20px; padding:8px 15px; border-radius:5px; transition:0.3s;}
+    .navbar a:hover { background:white; color:#d17b7b;}
+    .container { max-width:900px; margin:20px auto; background:#fff; box-shadow:0 4px 15px rgba(0,0,0,0.1); border-radius:10px; padding:30px; position:relative; z-index:1;}
+    h1{text-align:center;color:#333;}
+    .gallery { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:20px;}
+    .gallery img, .gallery video { width:200px; height:200px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="galeri.html">Galeri</a>
+  </nav>
+
+  <div class="container">
+    <h1>Galeri</h1>
+    <div class="gallery">
+      <img src="profil.jpg" alt="Foto Profil">
+      <img src="foto1.jpg" alt="Foto 1">
+      <video controls>
+        <source src="videokusnul.mp4" type="video/mp4">
+      </video>
+      <!-- Tambahkan foto/video lain sesuai kebutuhan -->
+    </div>
+  </div>
+</body>
+</html>

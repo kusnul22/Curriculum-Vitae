@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Kusnul Khotimah</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffafa;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200px;
+      background: #F5BABB;
+      z-index: -1;
+    }
+    body::before { top: -60px; left: -50px; transform: rotate(-5deg);}
+    body::after { bottom: -60px; right: -50px; transform: rotate(-5deg);}
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #F5BABB;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .navbar a:hover {
+      background: white;
+      color: #d17b7b;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    .left {
+      width: 35%;
+      background: linear-gradient(to bottom, #fbe3e3, #fffafa);
+      padding: 25px 20px;
+      text-align: center;
+    }
+    .left img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      border: 5px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .right {
+      width: 65%;
+      padding: 50px 30px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .right h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .right h2 {
+      font-size: 20px;
+      color: #d17b7b;
+      margin-bottom: 25px;
+    }
+    .right p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 30px;
+    }
+    .btn-group a {
+      text-decoration: none;
+      background: #F5BABB;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-group a:hover {
+      background: #d17b7b;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="about.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="galeri.html">Galeri</a>
+  </nav>
+
+  <div class="container">
+    <div class="left">
+      <img src="profil.jpg" alt="Foto Profil">
+      <h3>KUSNUL KHOTIMAH</h3>
+      <p>Asisten Manajer</p>
+    </div>
+
+    <div class="right">
+      <h1>Selamat Datang!</h1>
+      <h2>CV & Portofolio Online</h2>
+      <p>
+        Hai, saya Kusnul Khotimah. Selamat datang di halaman beranda saya. 
+        Di sini Anda bisa mengetahui lebih banyak tentang profil, pengalaman organisasi, keahlian, dan galeri kegiatan saya.
+      </p>
+      <div class="btn-group">
+        <a href="about.html">Tentang Saya</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="galeri.html">Galeri</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
